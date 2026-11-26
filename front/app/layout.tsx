@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
-export const metadata: Metadata = { title: "Praxis" };
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Chat",
+  description: "A demo assistant for support technicians.",
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt-BR">
+    <html lang="en">
       <body>{children}</body>
     </html>
   );
